@@ -45,42 +45,31 @@ fun main() {
     var day6 = "Суббота"
     var day7 = "Воскресенье"
 
-    if (c == 1) {
-        println(day1)
-    }
-    if (c == 2) {
-        println(day2)
-    }
-    if (c == 3) {
-        println(day3)
-    }
-    if (c == 4) {
-        println(day4)
-    }
-    if (c == 5) {
-        println(day5)
-    }
-    if (c == 6) {
-        println(day6)
-    }
-    if (c == 7) {
-        println(day7)
+    when (c) {
+        1 -> println(day1)
+        2 -> println(day2)
+        3 -> println(day3)
+        4 -> println(day4)
+        5 -> println(day5)
+        6 -> println(day6)
+        7 -> println(day7)
+        else -> {
+            println("Ошибка")
+        }
     }
     println("________________________________")
     println("Задача 5")
     var K = 5
-    if (K == 1) {
-        println("Плохо")
-    } else if (K == 2) {
-        println("Неудовлетворительно")
-    } else if (K == 3) {
-        println("Удовлетворительно")
-    } else if (K == 4) {
-        println("Хорошо")
-    } else if (K == 5) {
-        println("Отлично")
-    } else
-        println("Ошибка")
+    when (K) {
+        1 -> println("Плохо")
+        2 -> println("Неудовлетворительно")
+        3 -> println("Удовлетворительно")
+        4 -> println("Хорошо")
+        5 -> println("Отлично")
+        else -> {
+            println("Ошибка")}
+    }
+    
     println("__________________________________")
     println("Задача 6")
     var number = 4
