@@ -10,8 +10,9 @@ fun main() {
     println("Задача 1")
     for (i in n..b) {
         sumSqr += 1 / i.toDouble()
-        println(sumSqr)
+
     }
+    println(sumSqr)
     println("____________________________")
 
     do {
@@ -25,8 +26,9 @@ fun main() {
     var sSqr = 0
     for (p in c1..c2) {
         sSqr += p * p
-        println(sSqr)
+
     }
+    println(sSqr)
     println("____________________________")
 
     do {
@@ -84,7 +86,7 @@ fun main() {
         while (answer != result) {
             println("Подумай еще!")
             answer = readLine()
-            break
+            continue
         }
     }
     if (answer == result) {
